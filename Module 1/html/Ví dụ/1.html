@@ -6,15 +6,91 @@
     <title>Document</title>
 </head>
 <body>
-    <table border="2" style="border-collapse: collapse;">
-        <tr>
-            <td>aaaaaaaaaaaaaaaaaa</td>
-            <td>aaaaaaaaaaaaaaa</td>
-        </tr>
-        <tr>
-            <td>aaaaaaaaaaaaa</td>
-            <td>aaaaaaaaaaa</td>
-        </tr>
-    </table>
+    <!-- <p>Select a new car from the list.</p>
+
+     onchange / addEventListener
+    Cách 1
+    <select id="myselect" onchange="do_something()">
+        <option value="Audi">Audi</option>
+        <option value="BMW">BMW</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Volvo">Volvo</option>
+    </select>
+    <script>
+        function do_something(){
+            var selectedValue = document.getElementById("myselect").value;
+            alert(selectedValue);
+        }
+    </script>
+
+    Cách 2
+    <select id="myselect">
+        <option value="Audi">Audi</option>
+        <option value="BMW">BMW</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Volvo">Volvo</option>
+    </select>
+    <script>
+        var selectedElement = document.getElementById("myselect");
+        selectedElement.addEventListener("change", changeFunction);
+        function changeFunction(){
+            var selectValue = document.getElementById("myselect").value;
+            alert(selectValue)
+        }
+    </script> -->
+
+    
+
+
+
+     <!-- onmouseover / onmouseout
+     Cách 1
+     <p onmouseover="mouseover()" onmouseout="mouseout()" id="demo">This is a text</p>
+     <script>
+        function mouseover(){
+            document.getElementById("demo").style.color = "red";
+        }
+        function mouseout(){
+            document.getElementById("demo").style.color = "black"
+        }
+     </script>
+
+     Cách 2
+     <p id="demo">This is a text</p>
+     <script>
+        var demo = document.getElementById("demo")
+        demo.addEventListener("mouseover",mouseover)
+        demo.addEventListener("mouseout",mouseout)
+        function mouseover(){
+            document.getElementById("demo").style.color = "red";
+        }
+        function mouseout(){
+            document.getElementById("demo").style.color = "black"
+        }
+     </script> -->
+
+
+
+
+     
+     On click
+     Cách 1
+     <p onclick="do_something()">Click me</p>
+    <script>
+        function do_something(){
+                    alert("hello world")
+                }
+    </script> 
+     
+    Cách 2
+     <p id="demo">Click</p>
+     <script>
+       
+        var demo = document.getElementById("demo")
+        demo.addEventListener("click",clickFunction)
+        function clickFunction(){
+            alert("hello world")
+        }
+    </script>
 </body>
 </html>
