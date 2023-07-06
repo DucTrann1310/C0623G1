@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h3>Bài 1</h3>
+    <h3>Viết chương trình nhập vào giá trị cho a và b. Tính tổng a và b, nếu tổng nhỏ hơn 4, hiển thị chuỗi Below, ngược lại hiển thị Over. Lưu ý sử dụng toán tử ? :</h3>
+    <p>Nhập a = <input type="text" id="a"></p><br>
+    <p>Nhập b = <input type="text" id="b"></p><br>
+    <button onclick="ketqua()">Kết quả</button>
+    <p id="result"></p>
+    <script>
+        function ketqua(){
+            var a = document.getElementById("a").value
+                b = document.getElementById("b").value
+                c = ( a + b < 4 ? "Below" : "Over")
+                result = document.getElementById("result")
+            result.innerHTML = c
+        }
+     
+
+    </script> -->
+
+
+    <h3>Bài 2</h3>
+    <h3>Viết chương trình nhập vào giá trị cho chuỗi message. <br>
+        Nếu giá trị nhập vào là Employee thì hiển thị chuỗi Hello<br>
+        Còn lại nếu giá trị nhập vào là Director thì hiển thị chuỗi Greetings <br>
+        Còn lại nếu giá trị nhập vào chuỗi rỗng thì hiển thị No login <br>
+        Còn lại hiển thị chuỗi rỗng</h3>
+
+    <script>
+        let a = prompt("Nhập message: ")
+        let message = (a == "Employee") ? "Hello":
+                      (a == "Director") ? "Greetings":
+                      (a == "")         ? "No login":
+                      ""
+        alert(message)
+    </script>
+
+</body>
+</html>

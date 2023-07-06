@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .h1{
+        width: 200px;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="h1">Amount</td>
+            <td class="h1">From Currency</td>
+            <td class="h1">To Currency</td>
+        </tr>
+        <tr>
+            <th><input type="text" id="sotien"></th>
+            <th><select name="" id="giatridau">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select>
+            </th>
+            <th><select name="" id="giatrisau">
+                <option value="USD">USD</option>
+                <option value="VND">VND</option>       
+            </select>
+            </th>
+            <th><button onclick="click2()">Convert</button></th>
+        </tr>
+    </table>
+    <p id="result"></p>
+    <script src="ung-dung-chuyen-doi-tien-te.js"></script>
+</body>
+</html>
