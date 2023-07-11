@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        sodau = "<table border='1' width='400' cellspacing='0' cellpadding='10'>"
+        for (i = 1; i <= 10; i++) {
+            sodau = sodau + "<tr>";
+            for (j = 1; j <= 10; j++) {
+                sodau = sodau + "<td>" + i * j + "</td>";
+            }
+            sodau = sodau + "</tr>";
+        }
+        sodau = sodau + "</table>";
+        document.write(sodau);
+    </script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <label for="">Bài tập 1</label><br>
+    <label for="">Nhập số a = <input type="text" id="a"><br></label><br>
+    <label for="">Nhập số b = <input type="text" id="b"><br></label><br>
+    <button onclick="ketqua()">Kết quả</button>
+    <p id="result"></p>
+    <script>
+        function ketqua(){
+            var a = document.getElementById("a").value
+                b = document.getElementById("b").value
+                result = document.getElementById("result")
+            if( a % b == 0){
+                result.innerHTML = "a chia hết cho b"
+            }
+            else result.innerHTML = "a không chia hết cho b"
+        }
+    </script> -->
+
+
+
+    <!-- <label for="">Bài tập 2</label><br>
+    <label for="">Nhập tuổi học sinh: <input type="text" id="tuoi"></label><br>
+    <button onclick="ketqua()">Kết quả</button><br>
+    <p id="result"></p>
+    <script>
+        function ketqua(){
+            var tuoi = document.getElementById("tuoi").value
+                result = document.getElementById("result")
+            if(tuoi <15){
+                result.innerHTML = "Không đủ điều kiện vào học lớp 10"
+            }
+            else result.innerHTML = "Đủ điều kiện vào học lớp 10"
+        }
+    </script> -->
+
+
+
+    <!-- <label for="">Bài tập 3</label><br>
+    <label for="">Nhập số bất kì = <input type="text" id="so"></label><br>
+    <button onclick="ketqua()">Kết quả</button><br>
+    <p id="result"></p>
+    <script>
+        function ketqua(){
+            var so = document.getElementById("so").value
+                result = document.getElementById("result")
+            if(so <0){
+                result.innerHTML = "Số " + so + " nhỏ hơn 0"
+            }
+            else if(so ==0){
+                result.innerHTML = "Số " + so + " bằng 0"
+            }
+                else{
+                    result.innerHTML = "Số " + so + " lớn hơn 0"
+                }
+        }
+    </script> -->
+
+
+
+    <!-- <label for="">Bài tập 4</label><br>
+    <label for="">Nhập số a = <input type="text" id="a"></label><br><br>
+    <label for="">Nhập số b = <input type="text" id="b"></label><br><br>
+    <label for="">Nhập số c = <input type="text" id="c"></label><br><br>
+    <button onclick="ketqua()">Kết quả</button><br>
+    <p id="result"></p>
+    <script>
+        function ketqua(){
+            var a = document.getElementById("a").value
+                b = document.getElementById("b").value
+                c = document.getElementById("c").value
+                result = document.getElementById("result")
+            if(a > b){
+                if(a > c){
+                    result.innerHTML = a + " là số lớn nhất"
+                }
+                else{
+                    result.innerHTML = c + " là số lớn nhất"
+                }
+            }
+            else if(b > c){
+                    result.innerHTML = b + " là số lớn nhất"
+            }
+                else{
+                    result.innerHTML = c + " là số lớn nhất"
+                }
+        }
+        </script> -->
+
+
+
+        <!-- <label for="">Bài tập 5</label><br>
+        <label for="">Nhập điểm thi giữa kì: <input type="text" id="diemgiuaki"></label><br><br>
+        <label for="">Nhập điểm thi cuối kì: <input type="text" id="diemcuoiki"></label><br><br>
+        <button onclick="ketqua()">Kết quả</button><br>
+        <p id="result"></p>
+        <script>
+            function ketqua(){
+                var diemgiuaki = +document.getElementById("diemgiuaki").value
+                    diemcuoiki = +document.getElementById("diemcuoiki").value
+                    result = document.getElementById("result")
+                    TB = ((diemgiuaki*2 + diemcuoiki)/3)
+                if(TB >=8){
+                    result.innerHTML = "Điểm TB = " + TB + ". Học lực giỏi"
+                }
+                else if(TB >=6.5){
+                    result.innerHTML =  "Điểm TB = " + TB +  ". Học lực khá"
+                }
+                    else if(TB >=5){
+                        result.innerHTML =  "Điểm TB = " + TB +  ". Học lực TB"
+                    }
+                        else{
+                            result.innerHTML =   "Điểm TB = " + TB + ". Học lực Yếu"
+                        }
+            }
+        </script> -->
+
+
+
+
+        <!-- <label for="">Bài tập 6</label><br>
+        <label for="">Nhập doanh số = <input type="text" id="doanhso"></label><br><br>
+        <button onclick="ketqua()">Kết quả</button>
+        <p id="result"></p>
+        <script>
+            function ketqua(){
+                var doanhso = +document.getElementById("doanhso").value
+                    result = document.getElementById("result")
+                    a = ""
+                if(doanhso >10000000){
+                    a = doanhso*0.2
+                    result.innerHTML = "Hoa hồng nhận được là " + a
+                }
+                else if (doanhso > 8000000){
+                    a = doanhso*0.15
+                    result.innerHTML = "Hoa hồng nhận được là " + a
+                }
+                    else if(doanhso > 5000000){
+                        a = doanhso*0.1
+                    result.innerHTML = "Hoa hồng nhận được là " + a
+                    }
+                        else{
+                            a = 0
+                    result.innerHTML = "Hoa hồng nhận được là " + a
+                        }
+            }
+        </script> -->
+
+
+        <label for="">Bài tập 7</label><br>
+        <label for="">Nhập số giờ đã gọi = <input type="text" id="sogio"></label><br>
+        <button onclick="ketqua()">Kết quả</button>
+        <p id="result"></p>
+        <script>
+            function ketqua(){
+                var sogio = +document.getElementById("sogio").value
+                result = document.getElementById("result")
+                a = ""
+                if(sogio > 60){
+                    a = sogio*5000
+                    result.innerHTML = "Cước điện thoại = " + a
+                }
+                else if(sogio>40){
+                    a = sogio*4000
+                    result.innerHTML = "Cước điện thoại = " + a
+                }
+                    else if(sogio>20){
+                        a = sogio*3000
+                    result.innerHTML = "Cước điện thoại = " + a
+                    }
+                        else{
+                            a = sogio*2000
+                    result.innerHTML = "Cước điện thoại = " + a
+                        }
+        }
+        </script>
+</body>
+</html>

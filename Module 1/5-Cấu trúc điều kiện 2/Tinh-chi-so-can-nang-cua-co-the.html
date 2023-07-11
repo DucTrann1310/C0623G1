@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Nhập cân nặng: <input type="text" id="cannang"><br>
+    Nhập chiều cao: <input type="text" id="chieucao"><br>
+    <button id="nut" onclick="nhapchuot()">Chỉ số BMI</button>
+    <p id="ketqua"></p>
+    <script>
+        var weight = +document.getElementById("cannang")
+            height = +document.getElementById("chieucao")
+            bmi = weight / (height*2)
+
+        function nhapchuot(){
+            var chiso = ( bmi < 18.5) ? "Underweight" :
+                    (18.5 <= bmi < 25) ? "Normal" :
+                    (25 <= bmi < 30) ? "Overweight" :
+                    (30 <= bmi) ? "Obese" : ""
+            ketqua.innerHTML = "Kết quả: " + chiso
+        }
+    </script>
+</body>
+</html>

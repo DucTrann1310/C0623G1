@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .the1{
+            width: 40px;
+            height: 40px;
+            font-weight: bold;
+            font-size: 20px;
+            color: blue;
+        }
+        .thep{
+            height: 40px;
+        }
+        #view{
+            height: 30px;
+            width: 160px;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" style="border-collapse: collapse;">
+        <tr >
+            <td colspan="4" class="thep"><input id="view" type="text"></td>
+        </tr>
+        <tr>
+            <td><button class="the1" value="1" onclick="nhap(this.value)">1</button></td>
+            <td><button class="the1" value="2" onclick="nhap(this.value)">2</button></td>
+            <td><button class="the1" value="3" onclick="nhap(this.value)">3</button></td>
+            <td><button class="the1" value="+" onclick="nhap(this.value)">+</button></td>
+        </tr>
+        <tr>
+            <td><button class="the1" value="4" onclick="nhap(this.value)">4</button></td>
+            <td><button class="the1" value="5" onclick="nhap(this.value)">5</button></td>
+            <td><button class="the1" value="6" onclick="nhap(this.value)">6</button></td>
+            <td><button class="the1" value="-" onclick="nhap(this.value)">-</button></td>
+        </tr>
+        <tr>
+            <td><button class="the1" value="7" onclick="nhap(this.value)">7</button></td>
+            <td><button class="the1" value="8" onclick="nhap(this.value)">8</button></td>
+            <td><button class="the1" value="9" onclick="nhap(this.value)">9</button></td>
+            <td><button class="the1" value="*" onclick="nhap(this.value)">x</button></td>
+        </tr>
+        <tr>
+            <td><button class="the1" value="reset" onclick="reset()">C</button></td>
+            <td><button class="the1" value="0" onclick="nhap(this.value)">0</button></td>
+            <td><button class="the1" value="=" onclick="ketqua()">=</button></td>
+            <td><button class="the1" value="/" onclick="nhap(this.value)">/</button></td>
+        </tr>
+    </table>
+    <script>
+        
+        function nhap(value){
+            var str = document.getElementById("view").value;        
+             document.getElementById("view").value = str + value;
+        }
+        function ketqua(){
+            let result = eval(view.value)
+            view.value = result
+        }
+        function reset(){
+            view.value =""
+        }
+    </script>
+</script>
+</body>
+</html>
