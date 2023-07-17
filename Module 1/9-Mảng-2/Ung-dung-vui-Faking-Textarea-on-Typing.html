@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h2>Type anything slowly</h2>
+        <textarea name="" id="area" cols="30" rows="10" oninput="gobanphim()"></textarea>
+        <script>
+            let b = ""
+                i = 0
+                a = ["C","o","d","e"," ","G","y","m"," ","H","u","ế","!","!","!"]
+                c = ""
+            // document.getElementById("area").addEventListener("oninput",gobanphim)
+            function gobanphim(){               
+                b += a[i]
+                document.getElementById("area").value = b;
+                i++
+                if(i > a.length){
+                    document.getElementById("area").value = "";
+                    i=0;
+                    b="";
+                }
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = [4,2,7,9,5,23,5,8]
+        var b = +prompt("Nhập số bất kì: ")
+        for(i = 0; i < a.length; i++){
+            if(b == a[i]){
+                alert(b + " nằm ở vị trí thứ " + (i+1))
+                break
+            }
+        }
+        if(b != a[i]){
+            alert("không tìm thấy phần tử dã nhập")
+        }
+    </script>
+</body>
+</html>

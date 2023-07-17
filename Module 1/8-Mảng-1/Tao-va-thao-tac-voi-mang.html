@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="font-style: italic; font-weight: bold;">Sample Screen</h2>
+    <label for=""><input type="text" id="nhapvao">  <button id="themvao">Add</button> <button id="hienthi">Display</button></label>
+    <hr>
+    <p id="result"></p>
+    <script> 
+            document.getElementById("themvao").addEventListener("click",themvaohethong)
+            document.getElementById("hienthi").addEventListener("click", hienthimanhinh)
+        function themvaohethong(){
+            a = document.getElementById("nhapvao").value
+        }
+        function hienthimanhinh(){
+            document.getElementById("result").innerHTML = a
+        }
+    </script>
+</body>
+</html>

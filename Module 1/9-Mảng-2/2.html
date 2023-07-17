@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Bai 1   Tính tổng các giá trị lớn hơn giá trị đứng liền trước nó trong mảng 1 chiều các số thực
+        // var arr = [4.5, 7.1, 2.2, 7.0, 6.4, 8.5, 3.6]
+        // function sum(giatrilienke){
+        //     total=0
+        //     for(i=0;i<arr.length;i++){
+        //         if(arr[i-1]<arr[i]){
+        //             total+=arr[i]
+        //         }
+        //     }
+        //     return total
+        // }
+        // console.log(sum(arr));
+
+
+
+
+        // Bai 2 Tính trung bình cộng các số dương trong mảng 1 chiều các số thực
+        // var arr = [-23,34,3,54,6,-43,-213,46,-346,234,234,-324,-12]
+        // function sumIntDuong(tongsoduong){
+        //     total=0
+        //     count=0
+        //     average=0
+        //     for(i=0;i<arr.length;i++){
+        //         if(arr[i]>0){
+        //             total+=arr[i]
+        //             count+=1
+        //         }
+        //     }
+        //     average=total/count
+        //     return average
+        // }
+        // console.log(sumIntDuong(arr));
+
+
+
+        // Bai 3 Đưa các số chia hết cho 3 về đầu mảng
+        // var arr = [1,3,4,5,6,7,8,9]
+        // function resetarr(sualaimang){
+        //     tempchiahetcho3 = new Array
+        //     tempkhongchiahetcho3 = new Array
+        //     for(i=0, j=0;i<arr.length;i++){
+        //        if(arr[i]%3==0){
+        //             tempchiahetcho3.push(arr[i])
+        //        }
+        //        else{
+        //             tempkhongchiahetcho3.push(arr[i])
+        //        }
+        //     }
+        //     arrNew = tempchiahetcho3.concat(tempkhongchiahetcho3)
+        //     return arrNew
+        // }
+        // console.log(resetarr(arr));
+
+
+
+
+        // Bai 4 Đảo ngược mảng ban đầu
+        // var arr = [1,3,4,5,6,7,8,9]
+        // function reverse(daonguocmang){
+        //     arrNew = arr.reverse()
+        //     return arrNew
+        // }
+        // console.log(reverse(arr));
+
+
+
+
+        // Bai 5 Hãy liệt kê các số trong mảng 1 chiều các số thực thuộc đoạn [x, y] cho trước
+        // var arr = [1,3,4,5,6,7,8,9]
+        // function show(lietke){
+        //     x = +prompt("Nhập x sao cho x < " + arr.length + " : ")
+        //     y = +prompt("Nhập y sao cho y < " + arr.length + " và x < y: ")
+        //     a = new Array
+        //     for(i=0;i<arr.length;i++){
+        //         if(x<=i && i<=y){
+        //             a.push(arr[i])
+        //         }
+        //     }
+        //     return a
+        // }
+        // console.log(show(arr));
+
+
+        // Bai 6 Hãy liệt kê các giá trị trong mảng mà thỏa điều kiện lớn hơn giá trị tuyệt đối của giá trị đứng liền sau nó
+        // var arr = [3,57,23,5,345,32,56]
+        // function abs(trituyetdoi){
+        //     arrNew = new Array
+        //     for(i=0;i<arr.length;i++){
+        //         if(Math.abs(arr[i]) > Math.abs(arr[i+1])){
+        //             arrNew.push(arr[i])
+        //         }
+        //     }
+        //     return arrNew
+        // }
+        // console.log(abs(arr));
+
+
+
+        // Bai 7 Hãy liệt kê các vị trí mà giá trị tại đó là số chính phương trong mảng 1 chiều các số nguyên
+        // var arr = [3,57,9,23,5,25,16,345,32,56]    
+        // function sqrt(sochinhphuong){
+        //     count=0
+        //     arrNew = new Array
+        //     for(i=0;i<arr.length;i++){
+        //         canbachai = Math.sqrt(arr[i])
+        //         kiemtrasonguyen = Number.isInteger(canbachai)
+        //         if(kiemtrasonguyen == true){
+        //             arrNew.push(arr[i])
+        //         }
+        //     }
+        //     return arrNew
+        // }
+        // console.log(sqrt(arr));
+
+
+
+
+        // Bai 8 Đếm số dương chia hết cho 7 trong mảng
+        // var arr = [2,5,657,9,435,23,14,5,6,23,56,892,4,21,63]
+        // function dem(chiahetcho7){
+        //     count = 0
+        //     for(i=0;i<arr.length;i++){
+        //         if(arr[i] > 0 && arr[i]%7==0){
+        //             count++
+        //         }
+        //     }
+        //     return count
+        // }
+        // console.log("Có " + dem(arr) + " số dương chia hết cho 7");
+
+
+
+        // Bai 9 Đếm số nguyên tố trong mảng
+        // var arr = [
+        //     [12,234,456,658,45,13,234,45],
+        //     [23,345,657,345,213,123,345,57],
+        //     [123,345,456,457,345,234,123,1],
+        //     [345,678,234,456,457,234,23,354]
+        //     ]
+        // function demsonguyento(songuyento){
+        //     count=0
+        //     flag = true
+        //     arrNew = new Array
+        //     for(i=0;i<arr.length;i++){
+        //         if(arr[i]< 2){
+        //             flag =false
+        //         }
+        //         for(j = 2;j<arr[i];j++){
+        //             if(arr[i]%j==0){
+        //                 flag = false
+        //                 break
+        //             }
+        //         }
+        //         if(flag==true){
+        //             count++
+        //         }
+        //     }
+        //     return count
+        // }
+        // console.log("Có " + demsonguyento(arr) + " số nguyên tố trong mảng");
+
+
+
+
+
+
+
+                                    // Bai 10 Hãy xác định số lượng phần tử kề nhau mà cả 2 đều chẵn
+        // var arr = [2,4,657,9,435,23,14,5,6,21,56,892,4,21,63]   
+        // function dem(haiphantuliennhau){
+        //     count=0
+        //     for(i=0;i<arr.length-1;i++){
+        //         if(arr[i]%2==0&&arr[i+1]%2==0){
+        //             count++
+        //         }
+        //     }
+        //     return count
+        // }
+        // console.log(dem(arr));       
+
+
+
+
+        // Bai 11 Kiểm tra mảng có đối xứng không? Có trả về 1, không có trả về 0
+        // var arr = [1,2,3,4,5,6,6,5,4,3,2,1]
+        // function check(kiemtra){
+        //     flag = true
+        //     for(i=0;i<arr.length;i++){
+        //         if(arr[i]!= arr[arr.length-1] - i){
+        //             flag = false
+        //             break
+
+        //         }
+        //         if(flag == true){
+        //             return "Mảng đối xứng";
+        //         }
+        //         else{
+        //             return "Mảng không đối xứng";
+        //         }
+        //     }
+        // }
+        // console.log(check(arr));
+
+
+
+
+                        // Bai 12 Kiểm tra mảng có tăng dần hay không
+        // var arr = [2,4,6,7,23,76,235,238]
+        // function check(mangtangdan){
+        //     let flag = true
+        //     for(i=0;i<arr.length;i++){
+        //         if(arr[i] > arr[i+1]){
+        //             flag = false
+        //             break
+        //         }
+        //     }
+        //     if(flag == true){
+        //         return "Mảng tăng dần";
+        //     }
+        //     else{
+        //         return "Mảng không tăng dần";
+        //     }
+        // }
+        // console.log(check(arr));
+
+
+
+
+                        // Bai 13 Hãy cho biết tất cả các phần tử trong mảng a có nằm trong mảng b không
+        // var a=[1,2,3,4,5,6,7]
+        //     b=[324,45,56,53,1,2,3,4,5,6,7,324,456,657]
+        // function check(kiemtraham){
+        //     c = b.includes(a)
+        //     //console.log(c);
+        //     if(c == true){
+        //         return "Mảng a nằm trong mảng b";
+        //     }
+        //     else{
+        //         return "Mảng a không nằm trong mảng b";
+        //     }
+        // }
+        // console.log(check(b));
+
+
+
+
+                                // Bài 14 Kiểm tra ma trận 2 chiều có toàn dương hay không
+        // var arr=[
+        //     [12,234,356,57],
+        //     [34,5,2,57],
+        //     [23,34,657,79],
+        //     [46,67,345,23]
+        // ]
+        // function check(kiemtra) {
+        //     for(i=0;i<arr.length;i++){
+        //         for(j=0;j<arr[i].length;j++){
+        //             if(arr[i][j] < 0){
+        //                 // console.log("Ma trận không toàn dương");
+        //                 return false
+        //             }                  
+        //         }
+        //     }
+        //     return true
+        // }
+        // console.log(check(arr));
+
+
+
+                            // Bài 15 Kiểm tra một cột ma trận có giảm dần hay không
+        // var arr = [
+        //     [40, 234, 356, 57],
+        //     [26, 5, 2, 57],
+        //     [23, 34, 657, 79],
+        //     [2, 67, 345, 23]
+        // ]
+        // function check(kiemtragiamdan,cotso) {
+        //     for (i = 0; i < arr.length; i++) {
+        //         if(arr[i+1][cotso]>arr[i][cotso]){
+        //             return false
+        //         }
+        //     }
+        //     return true
+        // }
+        // console.log(check(arr,2));
+
+
+
+                            // Bài 16 Kiểm tra ma trận có tồn tại số lẻ hay
+    // var arr=[
+    //     [40,234,356,57],
+    //     [26,5,2,57],
+    //     [23,34,657,79],
+    //     [2,67,345,23]
+    // ]
+    // function check(kiemtrasole){
+    //     let flag = false
+    //     for(i=0;i<arr.length;i++){
+    //         for(j=0;j<arr[i].length;j++){
+    //             if(arr[i][j]%2!=0){
+    //                 flag = true
+    //                 break
+    //             }
+    //         }
+    //     }
+    //     if(flag == false){
+    //        return "Ma trận không tồn tại số lẻ";
+    //     }
+    //     else{
+    //         return "Ma trận tồn tại số lẻ";
+    //     }
+    // }
+    // console.log(check(arr));
+
+
+                                    //Bai 17 Liệt kê các dòng giảm dần trong ma trận
+    // var arr=[
+    //     [57,2,356,57],
+    //     [26,5,2,1],
+    //     [23,17,9,2],
+    //     [2,67,345,23]
+    // ]
+    // function lietke(donggiamdan){
+    //     arrNew = new Array
+    //     for(i=0;i<arr.length;i++){
+    //         count = 0
+    //         for(j=0;j<arr[i].length;j++){
+    //             if(arr[i][j]>arr[i][j+1]){
+    //                 count++
+    //                 if(count == arr[i].length-1){
+    //                     arrNew.push(arr[i])
+    //                 }
+    //             }
+    //         }
+    //     }
+    //     return arrNew
+    // }
+    // console.log(lietke(arr));
+
+
+
+
+
+                                //Bai 18 Tìm số chẵn đầu tiên trong ma trận
+    // var arr=[
+    //     [40,234,356,57],
+    //     [26,5,2,1],
+    //     [23,17,9,2],
+    //     [2,67,345,23]
+    // ]
+    // function timsochan(matran){
+    //     for(i=0;i<arr.length;i++){
+    //         for(j=0;j<arr[i].length;j++){
+    //             if(arr[i][j]%2==0){
+    //                 return arr[i][j]
+    //             }
+    //         }
+    //     }
+    //     return null
+    // }
+    // console.log(timsochan(arr));
+
+
+
+
+
+                                    //Bai 19 Tìm số chẵn lớn nhất trong ma trận
+    // var arr=[
+    //     [40,234,356,57],
+    //     [26,5,2,1],
+    //     [23,17,9,2],
+    //     [2,67,345,23]
+    // ]
+    // function check(sochanlonnhat){
+    //     max = 0
+    //     for(i=0;i<arr.length;i++){
+    //         for(j=0;j<arr[i].length;j++){
+    //             if(arr[i][j]%2==0 && arr[i][j] > max){
+    //                 max = arr[i][j]
+    //             }
+    //         }
+    //     }
+    //     return max
+    // }
+    // console.log(check(arr));
+
+
+
+                                    //Bai 20 Liệt kê các dòng có tổng lớn nhất
+    // var arr=[
+    //     [40,234,356,57],
+    //     [26,5,2,1],
+    //     [23,17,9,2],
+    //     [2,67,345,23]
+    // ]
+    // function sum(tonglonnhat) {
+    //     totalmax = 0
+    //     arrNew = new Array
+    //     for(i=0;i<arr.length;i++){          
+    //         total = 0
+    //         for(j=0;j<arr[i].length;j++){
+    //             total+=arr[i][j]
+    //         }
+    //         if(total > totalmax){
+    //             totalmax = total
+    //             arrNew = arr[i]
+    //         }
+    //         else if(total == totalmax){
+    //             arrNew.push(arr[i])
+    //         }
+    //     }
+    //     return arrNew
+    // } 
+    // console.log("Dòng có tổng lớn nhất là " + sum(arr));   
+    </script>
+</body>
+
+</html>

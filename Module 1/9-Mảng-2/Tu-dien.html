@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Nhập từ tiếng anh cần tra cứu: <input type="text" id="nhapvao"></label><br>
+    <button id="dich">DỊCH</button>
+    <hr>
+    <p id="result"></p>
+    <script>
+            console.log(nhapvao);
+            document.getElementById("dich").addEventListener("click",dichtienganh)
+        function dichtienganh(){
+            let a = ["apple","banana","dog","cat","bird","melon"]
+                b = ["quả táo","quả chuối","con chó","con mèo","con chim","dưa hấu"]
+                nhapvao = document.getElementById("nhapvao").value
+            for(i = 0; i < a.length; i++){
+                    if( nhapvao == a[i]){
+                        document.getElementById("result").innerHTML = a[i] + " có nghĩa là " + b[i]
+                        break
+                    }
+                    else{
+                        document.getElementById("result").innerHTML = "Không tìm thấy ý nghĩa của từ này"
+                    }
+
+            }
+        }
+    </script>
+</body>
+</html>

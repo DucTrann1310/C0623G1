@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                        // Bài 1 tìm giá trị lớn nhất của mảng
+    // var arr = [2,4,7,234,86,123,546,789,24,1,33]
+    // function findMax(lonhnat) {
+    //     max = 0
+    //     for(i = 0; i<arr.length; i++){
+    //         if(arr[i]>max){
+    //             max = arr[i]
+    //         }
+    //     }
+    //     return max  
+    // }
+    // let a = findMax(arr)
+    // console.log(a);
+
+
+
+
+                        // Bài 2 tìm giá trị lớn thứ 2 trong mảng
+    // var arr = [2,4,7,234,86,123,546,789,24,1,33]
+    // function findMax2(lonthuhai){
+    //     max = 0
+    //     max2 = 0
+    //     for(i = 0; i<arr.length; i++){
+    //         if(arr[i]>max){
+    //             max2 = max
+    //             max = arr[i]
+    //         }
+    //     }
+    //     return max2
+    // }
+    // let a = findMax2(arr)
+    // console.log(a);
+
+
+
+
+                        // Bai 3 Tính tổng 3 giá trị lẻ đầu tiên
+    // var arr = [2,4,7,234,86,123,546,789,24,1,33]  
+    // function sumThree(tongbagiatriledautien) {
+    //     count = 0
+    //     total = 0
+    //     for(i = 0;i<arr.length;i++){
+    //             if(arr[i]%2!=0 && count<3){
+    //                 total += arr[i]
+    //                 count++
+    //             }
+    //     }
+    //     return total           
+    // }
+    // let a = sumThree(arr)
+    // console.log(a);
+
+
+
+
+
+                        // Bai 4 Đảo ngược mảng
+    // var arr = [2,4,7,234,86,123,546,789,24,1,33]
+    // function reversearr(daonguocmang) {
+    //     let arrReverse = arr.reverse()
+    //     return arrReverse
+    // }
+    // let a = reversearr(arr)    
+    // console.log(a);
+
+
+
+
+                        // Bai 5 nối mảng b vào mảng a
+    // var a = [2,4,7,234,86,123,546,789,24,1,33]
+    //     b = [23,45,67,45,23,345,6]
+    // function link(mang1,mang2) {
+    //     c = a.concat(b)
+    //     return c   
+    // }   
+    // console.log(link(a,b));
+
+
+
+                        // Bai 6 tính tổng các số nguyên tố trong mảng
+    // var arr = [2,4,7,234,86,123,546,789,24,1,33]
+        
+    // function sumPrime(tong) {
+    //     total = 0
+    //     flag = true
+    //     for (i = 0; i < arr.length; i++) {
+    //         if (arr[i] < 2) {
+    //             flag = false
+    //         }
+    //         for (j = 2; j < arr[i]; j++) {
+    //             if (arr[i] % j == 0) {
+    //                 flag = false
+    //                 break
+    //             }
+    //         }
+    //         if (flag == true) {
+    //             total += arr[i]
+    //         }
+    //     }
+    //     return total    
+    // }
+    // console.log(sumPrime(arr));
+
+
+                        // Bai 7 tính trung bình các số chính phương trong mảng
+    // var arr = [2,4,7,234,86,123,546,789,24,1,33]
+    // function averageSqrt(sochinhphuong) {
+    //     count = 0
+    //     total = 0
+    //     for (i = 0; i < arr.length; i++) {
+    //         let canbachai = Math.sqrt(arr[i])
+    //         kiemtrasonguyen = Number.isInteger(canbachai)
+    //         if (kiemtrasonguyen == true) {
+    //             total += arr[i]
+    //             count += 1
+    //         }
+    //     }
+    //     let average = total / count
+    //     return average
+    // }
+    // console.log(averageSqrt(arr));
+
+
+
+                        // Bai 8 hiển thị các cột chẵn
+    // var arr = [
+    //     [12,234,456,658,45,13,234,45],
+    //     [23,345,657,345,213,123,345,57],
+    //     [123,345,456,457,345,234,123,1],
+    //     [345,678,234,456,457,234,23,354]
+    //     ]
+    // function displayColumn(cotchan){
+    //     for(i = 0; i < arr.length; i++){
+    //         total = '' 
+    //         for(j = 0; j < arr[i].length; j++){
+    //             if(j % 2 == 0){
+    //                 total += (arr[i][j] + " ")                
+    //             }               
+    //         } 
+    //         console.log(total);           
+    //     }
+    //     return total
+    // }
+    // console.log(displayColumn(arr));
+
+
+
+
+
+                        // Bai 9 Tính tổng các giá trị đường viền
+    // var arr = [
+    //     [12, 34, 56, 68, 45, 13, 234, 45],
+    //     [23, 35, 67, 35, 23, 13, 35, 57],
+    //     [13, 45, 46, 57, 35, 24, 13, 1],
+    //     [35, 68, 24, 46, 47, 24, 23, 34]
+    // ]
+    // function sumVien(tonggiatrivien){
+    //     total = 0
+    //     for(i=0;i<arr.length;i++){
+    //         for(j=0;j<arr[i].length;j++){
+    //             if(i==0||i==arr.length-1||j==0||j==arr[i].length-1)
+    //             total += arr[i][j]
+    //         }
+    //     }
+    //     return total      
+    // }
+    // console.log(sumVien(arr));
+
+
+
+
+                        // Bai 10 Tìm ra vị trí [i,j] của số chẳn đầu tiên
+    // var arr = [
+    //     [12, 34, 56, 68, 45, 13, 234, 45],
+    //     [23, 35, 67, 35, 23, 13, 35, 57],
+    //     [13, 45, 46, 57, 35, 24, 13, 1],
+    //     [35, 68, 24, 46, 47, 24, 23, 34]
+    // ]
+    // function findSochan(sochandautien){
+    //     let sochan = 0
+    //         count = 0
+    //     for(i=0;i<arr.length;i++){
+    //         for(j=0;j<arr[i].length;j++){
+    //             if(arr[i][j]%2==0 && count < 1){
+    //                 sochan+=arr[i][j]
+    //                 count++
+    //             }
+    //         }
+    //     }
+    //     return sochan;
+    // }
+    // console.log(findSochan(arr));
+
+
+
+
+                        // Bai 11 Tính tổng các số nguyên tố trong mảng 2 chiều
+    // var arr = [
+    //     [12, 34, 56, 68, 45, 13, 234, 45],
+    //     [23, 35, 67, 35, 23, 13, 35, 57],
+    //     [13, 45, 46, 57, 35, 24, 13, 1],
+    //     [35, 68, 24, 46, 47, 24, 23, 34]
+    // ]
+    // function sumPrime(tong2chieu){       
+    //     total = 0
+    //     for(i=0;i<arr.length;i++){
+    //         for(j=0;j<arr[i].length;j++){
+                
+    //             if(arr[i][j]<2){
+    //                 flag = false
+    //             }
+    //             for(k=2;k<arr[i][j];k++){
+    //                 if(arr[i][j]%k==0){
+    //                     flag = false
+    //                     break
+    //                 }
+    //             }
+    //             if(flag == true){
+    //                 total += arr[i][j]
+    //             }
+    //         }           
+    //     }
+    //     return total
+    // }
+    // console.log(sumPrime(arr));
+
+
+
+
+                            // Bai 12 Tính tổng: tam giác trên trái, trên phải, dưới trái, dưới phải
+    var arr = [
+        [12, 34, 56, 68],
+        [23, 35, 67, 35],
+        [13, 45, 46, 57],
+        [35, 68, 24, 46]
+    ]
+    function sumTriangleAboveLeft(tamgiactrentrai){
+        totaltrentrai = 0
+        for(i=0;i<arr.length;i++){
+            for(j=0;j<arr[i].length;j++){
+                if(i==0||j==0||i+j<arr.length){
+                    totaltrentrai += arr[i][j]
+                }
+            }
+        }
+        return totaltrentrai
+    }
+    console.log("tổng tam giác trên trái: " + sumTriangleAboveLeft(arr));
+
+    function sumTriangleAboveRight(tamgiactrenphai){
+        totaltrenphai = 0
+        for(i=0;i<arr.length;i++){
+            for(j=0;j<arr[i].length;j++){
+                if(i==0||j==arr[i].length-1||i==j||i<j){
+                    totaltrenphai+=arr[i][j]
+                }
+            }
+        }
+        return totaltrenphai
+    }
+    console.log("tổng tam giác trên phải: " + sumTriangleAboveRight(arr));
+
+    function sumTriangleBelowLeft(tamgiacduoitrai){
+        totalduoitrai=0
+        for(i=0;i<arr.length;i++){
+            for(j=0;j<arr[i].length;j++){
+                if(i==arr.length-1||j==0||i==j||i>j){
+                    totalduoitrai+=arr[i][j]
+                }
+            }
+        }
+        return totalduoitrai
+    }
+    console.log("tổng tam giác dưới trái: " + sumTriangleBelowLeft(arr));
+
+    function sumTriangleBelowRight(tamgiacduoiphai){
+        totalduoiphai=0
+        for(i=0;i<arr.length;i++){
+            for(j=0;j<arr[i].length;j++){
+                if(i==arr.length-1||j==arr.length-1||i+j==arr.length-1||i+j==arr.length)
+                totalduoiphai+=arr[i][j]
+            }
+        }
+        return totalduoiphai
+    }
+    console.log("tổng tam giác dưới phải: " + sumTriangleBelowRight(arr));
+    </script>
+</body>
+</html>

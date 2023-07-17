@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="thea"></h2>
+    <h2><button id="thaydoi">Change value</button></h2>
+    
+    <script>
+        var thea = document.getElementById("thea")
+            document.getElementById("thaydoi").addEventListener("click",nhapchuot)
+            a = [
+                ["(.)","(.)","(.)","(.)","(.)"],
+                ["(.)","(.)","(.)","(.)","(.)"],
+                ["(.)","(.)","(.)","(.)","(.)"],
+                ["(.)","(.)","(.)","(.)","(.)"],
+                ["(.)","(.)","(.)","(.)","(.)"],
+            ]
+            dem = 1       
+        for(i = 0; i<a.length; i++){
+            let b = ""
+            for(j = 0; j<a[i].length;j++){
+                b += a[i][j]
+            }
+            document.writeln(b)
+            document.writeln("<br>")
+        }
+        function nhapchuot(){
+           c = prompt("Nhập x =  ")
+           d = prompt("Nhập y =  ")
+           for(i = 0; i<a.length; i++){
+            let b = ""
+            for(j = 0; j<a[i].length;j++){
+                b += a[i][j]
+                if(h % 2 == 0){
+                    document.writeln(b)
+                }
+                else{
+
+                }
+            }
+
+        }
+            for(i = 0; i<a.length; i++){
+                for(j = 0; j<a[i].length; j++){
+                    if(b[i][j])
+                }
+            }
+        }
+        
+    </script>
+</body>
+</html>

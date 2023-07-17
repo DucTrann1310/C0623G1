@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numbers = 20
+            N = 2
+            flag = true
+        while(count<numbers){
+            for(i = 2; i < N; i++){
+                if(N % i == 0){
+                    flag = false
+                    break
+                }
+            }
+            if(flag == true){
+                console.log(N);
+                count++
+            }              
+            N++  
+        }
+
+        for(count = 0; count < numbers; count++){
+            for(i = 2; i < N; i++){
+                if(N % i == 0){
+                    flag = false
+                    break
+                }
+            }
+            if(flag == true){
+                console.log(N);
+            }              
+            N++  
+        } 
+
+//         let count = 0;
+// let numTemp = 2;
+// while (count <= 10) {
+//     let flag = true;
+//     for (let i = 2; i < numTemp; i++) {
+//         if (numTemp % i == 0) {
+//             flag = false;
+//             break;
+//         }
+//     }
+//     if(flag == true){
+//         console.log(numTemp + " Là số nguyên tố");
+//         count++;
+//     }
+//     numTemp++;
+// }
+    </script>
+</body>
+</html>
