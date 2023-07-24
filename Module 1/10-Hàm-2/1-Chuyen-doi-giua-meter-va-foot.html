@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Nhập meters: <input type="number" id="meters"></label><br>
+    <label for="">Nhập feets: <input type="number" id="feets"></label><br>
+    <button id="result">Kết quả</button>
+    <script>
+        meters = document.getElementById("meters").value
+        feets = document.getElementById("feets").value
+        function meterToFoot(meter){
+            foot = meter/0.305
+            return foot
+        }
+        function footToMeter(foot){
+            meter = foot/3.279
+            return meter
+        }
+        document.getElementById("result").addEventListener("click",function(){
+            a = meterToFoot(document.getElementById("meters").value)
+            b = footToMeter(document.getElementById("feets").value)
+            document.write(meters + " meters = " + a.toFixed(2) + " foots")
+            document.write("<br>")
+            document.write(feets + " foots = " + b.toFixed(2) + " meters")
+        })
+    </script>
+</body>
+</html>
