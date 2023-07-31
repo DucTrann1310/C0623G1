@@ -1,7 +1,7 @@
 function negativeInteger(string) {
     let count = 0;
     let array = string.split("");
-    let check = "aeiou"
+    let check = "aeiou";
     for (let i = 0; i < array.length; i++) {
         if (check.includes(array[i])) {
             count++;
@@ -13,5 +13,5 @@ function negativeInteger(string) {
         return count;
     }
 }
-let str = "Hello World"
+let str = "Hello World";
 console.log(negativeInteger(str));
